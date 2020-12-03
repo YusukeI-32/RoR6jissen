@@ -24,16 +24,4 @@ ActiveRecord::Schema.define(version: 2020_12_02_112131) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "menbers", force: :cascade do |t|
-    t.integer "number", null: false
-    t.string "name", null: false
-    t.string "full_name"
-    t.string "email"
-    t.date "birthday"
-    t.integer "sex", default: 1, null: false
-    t.boolean "administrator", default: false, null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
 end
